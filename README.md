@@ -93,6 +93,22 @@ cp .env.sample .env
 yarn start
 ```
 
+## With Docker
+
+## 1. Build Docker Image from Dockerfile
+
+```bash
+docker build -t codechat .
+```
+
+## 2. Run the Docker Image
+
+```bash
+docker run -p 8000:8000 -d codechat
+```
+
+## 3. Visit site on localhost:8000
+
 <!-- 🔗 [Live demo](https://devblog-if7i.onrender.com/) -->
 
 ## 📄 License
