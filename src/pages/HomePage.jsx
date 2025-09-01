@@ -51,7 +51,7 @@ const HomePage = () => {
     });
   }, [navigate, roomId, username]);
   return (
-    <>
+    <Box height={"100vh"} width={"100vw"} background={"#09090B"}>
       <AbsoluteCenter maxW={"90%"} shadow={"md"}>
         <VStack
           spaceY={"2.5"}
@@ -63,7 +63,7 @@ const HomePage = () => {
           alignItems={"start"}
         >
           <Image src="/images/codeChat_logo.png" alt="logo" />
-          <Text>Paste invitation ROOM ID</Text>
+          <Text color="#fff">Paste invitation ROOM ID</Text>
           <Input
             placeholder="ROOM ID"
             background={"#292929"}
@@ -91,7 +91,7 @@ const HomePage = () => {
             </Button>
           </Box>
           <Box alignSelf={"center"}>
-            <Text fontSize={"sm"}>
+            <Text color={"#fff"} fontSize={"sm"}>
               If you don't have an invite then create{" "}
               <Link
                 display={"inline"}
@@ -111,14 +111,18 @@ const HomePage = () => {
         textAlign={"center"}
         minW={"100%"}
       >
-        <Text>
+        <Text color="#fff">
           Made with 💛 by{" "}
-          <Link href="https://github.com/Siddharth9101" target="_blank">
+          <Link
+            href="https://github.com/Siddharth9101"
+            target="_blank"
+            color={"#fff"}
+          >
             Siddharth Saxena
           </Link>
         </Text>
       </Box>
-    </>
+    </Box>
   );
 };
 

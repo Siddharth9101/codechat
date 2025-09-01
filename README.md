@@ -90,24 +90,26 @@ cp .env.sample .env
 ### 5. Start the server
 
 ```bash
-yarn start
+yarn server:dev
 ```
+
+### 6. Start the frontend
+
+```bash
+yarn dev
+```
+
+### 7. Visit localhost:5173
 
 ## With Docker
 
-## 1. Build Docker Image from Dockerfile
+## 1. Run using Docker Compose
 
 ```bash
-docker build -t codechat .
+docker compose up -d
 ```
 
-## 2. Run the Docker Image
-
-```bash
-docker run -p 8000:8000 -d codechat
-```
-
-## 3. Visit site on localhost:8000
+## 3. Visit site on localhost:5173
 
 🔗 [Live demo](https://codechat-t6lv.onrender.com/)
 

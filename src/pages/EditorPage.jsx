@@ -74,7 +74,7 @@ const EditorPage = () => {
   if (!location.state) return <Navigate to={"/"} />;
 
   return (
-    <Box display={"flex"}>
+    <Box display={"flex"} background={"#09090B"}>
       <EditorDrawer>
         <Sidebar
           clients={clients}

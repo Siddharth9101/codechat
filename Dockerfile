@@ -1,8 +1,10 @@
 FROM node:20-alpine
+
 WORKDIR /app
-COPY package.json ./
-COPY yarn.lock ./
+
+COPY package.json yarn.lock ./
 RUN yarn
+
 COPY . .
-EXPOSE 8000
-CMD ["yarn", "start"]
+
+CMD ["yarn", "server:dev"]

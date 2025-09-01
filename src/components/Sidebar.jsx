@@ -62,14 +62,19 @@ const Sidebar = ({ clients, roomId, leaveRoom, codeRef }) => {
 
   // const
   return (
-    <Box height="100%" display="flex" flexDirection="column">
+    <Box
+      height="100%"
+      display="flex"
+      flexDirection="column"
+      background="#111111"
+    >
       <Image
         src="/images/codeChat_logo.png"
         alt="logo"
         height="18"
         objectFit={"cover"}
       />
-      <Text fontWeight="bold" fontSize="lg" mb={6} mt={4}>
+      <Text fontWeight="bold" fontSize="lg" mb={6} mt={4} color="#fff">
         Connected
       </Text>
       <ScrollArea.Root flex="1">
@@ -81,7 +86,7 @@ const Sidebar = ({ clients, roomId, leaveRoom, codeRef }) => {
                   <Avatar.Root>
                     <Avatar.Fallback name={client.username} />
                   </Avatar.Root>
-                  <Text truncate maxW={"200px"}>
+                  <Text truncate maxW={"200px"} color="#fff">
                     {client.username}
                   </Text>
                 </HStack>
@@ -123,14 +128,20 @@ const Sidebar = ({ clients, roomId, leaveRoom, codeRef }) => {
         }}
       >
         <Drawer.Trigger asChild>
-          <Button variant="outline" size="sm" mt={2}>
+          <Button
+            variant="outline"
+            size="sm"
+            mt={2}
+            color="#fff"
+            _hover={{ color: "#000" }}
+          >
             RUN
           </Button>
         </Drawer.Trigger>
         <Portal>
           <Drawer.Backdrop />
           <Drawer.Positioner>
-            <Drawer.Content>
+            <Drawer.Content background="#111111" color="#fff">
               <Drawer.Header>
                 <Drawer.Title>
                   <Image
@@ -145,7 +156,11 @@ const Sidebar = ({ clients, roomId, leaveRoom, codeRef }) => {
               </Drawer.Body>
               <Drawer.Footer></Drawer.Footer>
               <Drawer.CloseTrigger asChild>
-                <CloseButton size="sm" />
+                <CloseButton
+                  size="sm"
+                  color="#fff"
+                  _hover={{ color: "#000" }}
+                />
               </Drawer.CloseTrigger>
             </Drawer.Content>
           </Drawer.Positioner>

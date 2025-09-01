@@ -18,10 +18,8 @@ const EditorDrawer = ({ children }) => {
       <Portal>
         <Drawer.Backdrop />
         <Drawer.Positioner>
-          <Drawer.Content>
-            <Drawer.Header></Drawer.Header>
+          <Drawer.Content background="#111111">
             <Drawer.Body>{children}</Drawer.Body>
-            <Drawer.Footer></Drawer.Footer>
             <Drawer.CloseTrigger asChild>
               <CloseButton size="sm" />
             </Drawer.CloseTrigger>
