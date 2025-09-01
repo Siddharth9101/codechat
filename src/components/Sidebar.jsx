@@ -38,10 +38,13 @@ const Sidebar = ({ clients, roomId, leaveRoom, codeRef }) => {
     setLoading(true);
     const code = codeRef.current;
     try {
-      const { data } = await axios.post("http://localhost:8000/run", {
-        code,
-        languageId,
-      });
+      const { data } = await axios.post(
+        `${import.meta.env.VITE_SERVER_URL}/run`,
+        {
+          code,
+          languageId,
+        }
+      );
       if (data.stdout) {
         setOutput(data.stdout);
       } else if (data.stderr) {
