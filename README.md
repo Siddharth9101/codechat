@@ -109,7 +109,7 @@ docker run -p 8000:8000 -d codechat
 
 ## 3. Visit site on localhost:8000
 
-<!-- 🔗 [Live demo](https://devblog-if7i.onrender.com/) -->
+🔗 [Live demo](https://codechat-t6lv.onrender.com/)
 
 ## 📄 License
 
