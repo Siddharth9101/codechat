@@ -20,7 +20,7 @@ Codechat is a fullstack realtime code editor web application built using **React
 - **Backend:** Node & Express, Judge0, socket.io
 - **Styling:** Chakra UI
 - **Code Editor:** Codemirror
-- **Realtime Communication:** WebSockets
+- **Realtime Code Transfer:** WebSockets
 
 ---
 
@@ -40,6 +40,7 @@ codechat/
 ├── .env                  # Environment variables
 ├── .env.sample           # Sample env file
 ├── .gitignore            # Git ignore rules
+├── docker-compose.yml    # Docker compose file
 ├── Dockerfile            # Dockerfile
 ├── eslint.config.js      # ESLint configuration
 ├── favicon.ico           # Application icon
@@ -66,8 +67,6 @@ codechat/
 
 ## 🚀 Getting Started
 
-## Without Docker
-
 ### 1. Clone the repo
 
 ```bash
@@ -75,41 +74,43 @@ git clone https://github.com/Siddharth9101/codechat.git
 cd codechat
 ```
 
-### 2. Install dependencies
-
-```bash
-yarn
-```
-
-### 4. Create .env file
+### 2. Create .env file
 
 ```bash
 cp .env.sample .env
 ```
 
-### 5. Start the server
+## Without Docker
+
+### 3. Install dependencies
+
+```bash
+yarn
+```
+
+### 4. Start the server
 
 ```bash
 yarn server:dev
 ```
 
-### 6. Start the frontend
+### 5. Start the frontend
 
 ```bash
 yarn dev
 ```
 
-### 7. Visit localhost:5173
+### 6. Visit the site on localhost:5173
 
 ## With Docker
 
-## 1. Run using Docker Compose
+## 3. Run using Docker Compose
 
 ```bash
 docker compose up -d
 ```
 
-## 3. Visit site on localhost:5173
+## 4. Visit the site on localhost:5173
 
 🔗 [Live demo](https://codechat-t6lv.onrender.com/)
 
