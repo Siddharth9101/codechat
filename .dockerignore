@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+npm-debug.log
+
+# next build output
+.next
+out
+
+# OS / editor junk
+.DS_Store
+*.swp
+
+# env files (optional, if you don’t want them baked into the image)
+.env
+.env.local
+.env.sample
